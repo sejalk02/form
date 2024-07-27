@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Survey Form</h1>
+        <p>Thank you for participating in our survey. Your feedback is valuable to us!</p>
+        <form action="#" method="post">
+           
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Survey Questions</legend>
+                <label for="satisfaction">How satisfied are you with our product/service?</label>
+                <select id="satisfaction" name="satisfaction" required>
+                    <option value="very-satisfied">Very Satisfied</option>
+                    <option value="satisfied">Satisfied</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="unsatisfied">Unsatisfied</option>
+                    <option value="very-unsatisfied">Very Unsatisfied</option>
+                </select>
+
+                <label for="recommendation">How likely are you to recommend our product/service to others?</label>
+                <select id="recommendation" name="recommendation" required>
+                    <option value="extremely-likely">Extremely Likely</option>
+                    <option value="very-likely">Very Likely</option>
+                    <option value="somewhat-likely">Somewhat Likely</option>
+                    <option value="not-so-likely">Not So Likely</option>
+                    <option value="not-at-all-likely">Not At All Likely</option>
+                </select>
+
+                <label for="likes">What aspects of our product/service do you like the most?</label>
+                <textarea id="likes" name="likes" rows="4" required></textarea>
+
+                <label for="improvement">What areas do you think we can improve?</label>
+                <textarea id="improvement" name="improvement" rows="4" required></textarea>
+
+                <label for="usage">How do you usually use our product/service?</label>
+                <select id="usage" name="usage" required>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="rarely">Rarely</option>
+                </select>
+
+                <label>Rate the following features:</label>
+                <label for="feature-a">Feature A:</label>
+                <input type="number" id="feature-a" name="feature-a" min="1" max="5" required>
+
+                <label for="feature-b">Feature B:</label>
+                <input type="number" id="feature-b" name="feature-b" min="1" max="5" required>
+
+                <label for="feature-c">Feature C:</label>
+                <input type="number" id="feature-c" name="feature-c" min="1" max="5" required>
+
+                <label for="feature-d">Feature D:</label>
+                <input type="number" id="feature-d" name="feature-d" min="1" max="5" required>
+
+                <label for="customer-service">How was your experience with our customer service?</label>
+                <select id="customer-service" name="customer-service" required>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Poor</option>
+                    <option value="very-poor">Very Poor</option>
+                </select>
+            </fieldset>
+
+         
+            <fieldset>
+                <legend>Additional Feedback</legend>
+                <label for="comments">Do you have any additional comments or suggestions for us?</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </fieldset>
+
+            <!-- Consent -->
+            <fieldset>
+                <legend>Consent</legend>
+                <label for="consent">Do you consent to having your responses used for research and improvement purposes?</label>
+                <input type="radio" id="consent-yes" name="consent" value="yes" required>
+                <label for="consent-yes">Yes</label>
+                <input type="radio" id="consent-no" name="consent" value="no" required>
+                <label for="consent-no">No</label>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+   
+</div>
+</body>
+</html>
